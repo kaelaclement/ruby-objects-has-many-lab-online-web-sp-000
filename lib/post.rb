@@ -13,7 +13,9 @@ class Post
   end
 
   def author_name
-    nil if @author == nil
+    if @author == nil
+      nil
+    end
     self.author.name
   end
 
